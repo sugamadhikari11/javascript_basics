@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = "SAND"
+        let x = 1.1
+        let istrue = true
+        let names = ["SAND", "LIFE", 10]
+        console.log(name)
+        console.log(x)
+        console.log(istrue)
+        console.log(names)
+        console.log(2+4)
+
+        let person = {
+            first_name: "sugam",
+            last_name: "Adhikari"
+        }
+        console.log(person)
+
+        let isOpen = false
+        if(isOpen == true){
+            console.log("Open!")
+        }else{
+            console.log("Closed!")
+        }
+
+        const a = "2"
+        const b = 2
+        if (a===b){
+            console.log("EQUAl")
+        }else{
+            console.log("NOT EQUAL")
+        }
+
+
+        
+        //function method
+        function add(a,b){
+            return a+b
+        }
+        console.log(add(2,4))
+
+        //const function method
+        const sub = function(a,b){
+            return a-b
+        }
+        console.log(sub(6,3))
+
+        //Arrow method
+        const mul = (a,b) =>{
+            return a*b
+        }
+        console.log(mul(4,4))
+        
+
+        //prime number
+        let count=0
+        for(let i=0;i<101;i++){
+            for(let k=1;k>=i;i++){
+            if (i%k === 0){
+                count= count+1
+                }
+            } 
+            if (count<=2){
+                console.log(i)
+            }
+            count=0
+        }
+        
+        let numbers =[1,2,3,4,5,6,7,8,9,10]
+        let odd_numbers = numbers.filter(function(a){
+        if(a%2 !==0){
+            return a
+        }
+        })
+        console.log(odd_numbers)
+
+
+        const add_hundred = (a)=>{
+            return 100+a
+        }
+        let new_numbers = numbers.map(add_hundred)
+        console.log(new_numbers)
+
+
+    </script>
+</body>
+</html>
